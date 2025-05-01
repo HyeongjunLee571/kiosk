@@ -201,7 +201,8 @@ public class Kiosk {
 
     void DessertorderOrders(Menu MenuItemLists) {
         OrderMenuItems -=1;
-        menu = MenuItemLists.getDrinkmenus().get(OrderMenuItems).getdrink()+MenuItemLists.getDrinkmenus().get(OrderMenuItems).getdrinkprice();
+        menu = MenuItemLists.getDessertmenus().get(OrderMenuItems).getMenuname()+MenuItemLists.getDessertmenus().get(OrderMenuItems).getMenuprice()+
+                MenuItemLists.getDessertmenus().get(OrderMenuItems).getMenudescription();
         menuName = MenuItemLists.getDrinkname().get(OrderMenuItems).getName();
         menuPrice = MenuItemLists.getDrinkmenus().get(OrderMenuItems).getdrinkprice();
     }
